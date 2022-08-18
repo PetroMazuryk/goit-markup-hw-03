@@ -175,6 +175,9 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--primary-white-color);
 
+width: 696px;
+margin-left: auto;
+margin-right: auto;
 margin-bottom: 30px;
 }
 
@@ -189,7 +192,8 @@ border-radius: 4px;
 color: var(--button-color);
 background-color: var(--accent-color);
 cursor: pointer;
-
+ 
+ border: none;
  display: inline-block;
  padding: 10px 32px;
  }
@@ -226,6 +230,8 @@ font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
+
+margin-bottom: 10px;
 }
 
 .features-text {
@@ -233,6 +239,9 @@ color: var(--main-text-color);
 }
 
 /* ----- Чим ми займаємось ----- */
+.section-work {
+    padding-top: 0;
+}
 .section-title {
 font-weight: 700;
 font-size: 36px;
@@ -271,6 +280,12 @@ margin-bottom: 50px;
     text-align: center
 }
 
+.team-item {
+background-color: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
 .team-item:not(:nth-child(4n)) {
   margin-right: 30px;
 }
@@ -291,6 +306,8 @@ margin-bottom: 10px;
 font-size: 16px;
 line-height: 1.19;
 color: var(--main-text-color);
+
+margin-bottom: 30px;
 }
 
 /* ----- Підвал ----- */
@@ -369,6 +386,7 @@ text-align: center;
 color: var(--primary-text-color);
 background: var(--section-backgraund-color);
 
+border: none;
 cursor: pointer;
 border-radius: 4px;
 background: #f5f4fa;
@@ -397,7 +415,7 @@ border-radius: 4px;
 
 .portfolio-item {
 flex-basis: calc((100% - 60px) / 3);
-border-bottom: 1px solid var(--banner-border-color);
+order-bottom: 1px solid var(--banner-border-color);
 }
 .portfolio-item:not(:nth-child(3n)) {
     margin-right: 30px;
@@ -407,8 +425,11 @@ border-bottom: 1px solid var(--banner-border-color);
     margin-bottom: 30px;
 }
 
-.portfolio-img {
-    margin-bottom: 20px;
+.portfolio-card {
+    padding: 20px 24px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .portfolio-title {
@@ -418,7 +439,6 @@ line-height: 2;
 letter-spacing: 0.06em;
 color: var(--primary-text-color);
 
-padding-left: 24px;
 margin-bottom: 4px;
 }
 
@@ -426,7 +446,5 @@ margin-bottom: 4px;
 font-size: 16px;
 line-height: 1.9;
 color: var(--main-text-color);
-
-padding-left: 24px;
 }
 
